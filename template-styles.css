@@ -924,11 +924,12 @@ body {
 }
 .n-main__container {
   margin-bottom: 0px;
-  display: table;
+  display: block;
 }
 @media all and (min-width: 767px) {
   .n-main__container {
     margin-bottom: 50px;
+    display: table;
   }
 }
 .n-main__container:after {
@@ -975,7 +976,7 @@ body {
 }
 .n-main__col {
   width: auto;
-  display: table-cell;
+  display: block;
   background: #fff;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -989,6 +990,7 @@ body {
 }
 @media all and (min-width: 767px) {
   .n-main__col {
+    display: table-cell;
     width: 73%;
     margin: 0;
     border-top-left-radius: 10px;

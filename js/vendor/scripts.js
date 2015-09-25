@@ -219,6 +219,7 @@ window.onload = function(){
 
     createSliderM();
     checkSlider();
+
     $(window).resize(function(){
         checkSlider();
         showMenu();

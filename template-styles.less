@@ -817,10 +817,11 @@ body {
 
   &__container {
     margin-bottom: 0px;
-    display: table;
+    display: block;
 
     @media all and (min-width: @mq-small) {
       margin-bottom: 50px;
+      display: table;
     }
     &:after {
       .clear;
@@ -868,7 +869,7 @@ body {
 
   &__col {
     width: auto;
-    display: table-cell;
+    display: block;
     background: #fff;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -879,6 +880,7 @@ body {
     .box-shadow (@x:1px, @y:1px, @blur:1px, @color:rgba(0, 0, 0, 0.15));
 
     @media all and (min-width:@mq-small) {
+      display: table-cell;
       width: 73%;
       //float: left;
       margin: 0;
