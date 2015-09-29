@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Отзывы</title>
+
+        <!-- Reset styles -->
+        <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/reset.css" >
+
+        <!-- Template styles -->
+        <link rel="stylesheet" href="css/animations.css" >
+        <link rel="stylesheet" href="js/vendor/magnific-popup/magnific-popup.css" >
+		<link rel="stylesheet" href="js/vendor/swiper/swiper.min.css" >
+		<link rel="stylesheet" href="template-styles.css" >
+
+		<!--[if lt IE 10]><script src="js/vendor/IE9.js"></script><![endif]-->
+
+        <!-- Scripts -->
+        <script src="js/vendor/jquery-1.11.1.min.js"></script>
+        <script src="js/vendor/modernizr.custom.js"></script>
+        <script src="js/vendor/fastclick.min.js"></script>
+        <script src="js/vendor/html5shiv.min.js"></script>
+        <script src="js/vendor/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <script src="js/vendor/jquery-validation/jquery.validate.min.js"></script>
+        <script src="js/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/vendor/maskedPlug/masked.js"></script>
+        <script src="js/vendor/swiper/swiper.jquery.min.js"></script>
+        <script src="js/vendor/tabby/classList.min.js"></script>
+        <script src="js/vendor/tabby/tabby.min.js"></script>
+
+        <script src="js/vendor/scripts.js"></script>
+
+	</head>
+
+	<body>
+
+	    <div id="mobile-indicator"></div>
+	    <div id="medium-indicator"></div>
+	    <div id="max-indicator"></div>
+
+    	<div id="page">
+
+    	    <header class="n-header">
+
+    	        <div class="n-container clearfix">
+
+                    <div class="n-header__logo"></div>
+
+                    <div class="n-header__contacts">
+
+                        <div class="n-header__contacts__number"><span>(8182) <b>62-58-52</b></span></div>
+                        <div class="n-header__contacts__adres">г. Архангельск, Окружное шоссе, 6</div>
+
+                    </div>
+                    <!-- /.header__contacts -->
+
+                    <div class="n-header__search">
+
+                        <form>
+                            <div class="button">
+                                <input type="submit" value="">
+                            </div>
+                            <div class="search">
+                                <input type="search" placeholder="поиск по сайту">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.header__search -->
+
+                    <div class="n-header__icons">
+
+                        <a class="n-header__icons__rect n-header__icons--mes" href="#popup-letter"></a>
+                        <a class="n-header__icons__rect n-header__icons--phone" href="#popup-phone"></a>
+                        <a class="n-header__icons__rect n-header__icons--skype" href="#"></a>
+                        <div class="n-header__icons__menu"><span>МЕНЮ</span></div>
+
+                    </div>
+                    <!-- /.n-header__icons -->
+
+                </div>
+                <!-- /.n-container -->
+
+    	    </header>
+
+    	    <div class="n-nav">
+
+    	        <div class="n-container">
+
+                     <ul class="n-nav__top-menu clearfix">
+                         <li><a href="#">Каталог</a></li>
+                         <li><a href="#">Услуги</a></li>
+                         <li><a href="#">Акции</a></li>
+                         <li><a href="#">Новости</a></li>
+                         <li><a href="#">Отзывы</a></li>
+                         <li><a href="#">Фотогалерея</a></li>
+                         <li><a href="#">Производство</a></li>
+                         <li><a href="#">О компании</a></li>
+                         <li><a href="#">Контакты</a></li>
+                     </ul>
+
+                 </div>
+                <!-- /.n-container -->
+
+             </div>
+             <!-- /.n-nav -->
+
+             <main class="n-main">
+
+                <div class="n-container">
+
+                    <div class="n-main__cat n-main__cat--h">
+
+                        <div class="n-main__header-wrap n-main__header-wrap--mod">
+
+                            <div class="n-main__header">
+                                <span>Отзывы</span>
+                            </div>
+                            <!-- /.n-main__header -->
+
+                        </div>
+                        <!-- /.n-main__header-wrap -->
+
+                        <div class="n-main__container n-main__container--rtl">
+
+                            <div class="n-main__sidebar n-main__sidebar--fixed">
+
+                                <div class="n-main__sidebar__container n-main__sidebar__container--mod">
+
+                                    <div class="n-main__sidebar__header n-main__sidebar__header--mod">Оставить отзыв о нас</div>
+
+                                </div>
+                                <!-- /.n-main__sidebar__container -->
+
+                                <div class="n-main__sidebar__line"></div>
+
+                                <div class="n-main__sidebar__container n-main__sidebar__container--mod">
+
+                                    <div class="n-main__sidebar__text">
+                                        Здесь вы можете оставить отзыв о нашем
+                                        новом сайте. Нам будет очень интересно
+                                        узнать Ваше мнение.
+                                    </div>
+
+                                    <form class="n-main__sidebar__form rf">
+                                        <fieldset class="n-main__sidebar__form__field">
+                                            <label>Ваше Ф.И.О</label>
+                                            <input type="text" class="rfield">
+                                        </fieldset>
+                                        <fieldset class="n-main__sidebar__form__field">
+                                            <label>E-mail</label>
+                                            <input type="text" class="rfield">
+                                        </fieldset>
+                                        <fieldset class="n-main__sidebar__form__field">
+                                            <label>Ваш отзыв</label>
+                                            <textarea class="rfield"></textarea>
+                                        </fieldset>
+
+                                        <div class="n-main__sidebar__form__x2">
+
+                                            <div class="n-main__sidebar__form__x2__col">
+                                                <fieldset>
+                                                    <label>Помогите нам в борьбе со спамом!</label>
+                                                    <input type="text" disabled class="n-main__sidebar__form__x2__col__cap">
+                                                </fieldset>
+                                            </div>
+
+                                            <div class="n-main__sidebar__form__x2__col">
+                                                <fieldset>
+                                                    <label>Введите символы с картинки</label>
+                                                    <input type="text" class="rfield">
+                                                </fieldset>
+                                            </div>
+
+                                        </div>
+                                        <!-- /.n-main__sidebar__form__x2 -->
+
+                                        <div class="n-main__sidebar__form__last">
+                                            <input type="submit" value="Отправить" class="disabled" href="#pop-up-thanks">
+                                        </div>
+
+                                    </form>
+
+                                </div>
+                                <!-- /.n-main__sidebar__container -->
+
+                            </div>
+                            <!-- /.n-main__sidebar -->
+
+                            <div class="n-main__col">
+
+                                <div class="n-main__col__container n-main__col__container--pad">
+
+                                    <div class="n-main__col__crumbs">
+
+                                        <ul>
+                                            <li><a href="#">Отзывы</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <!-- /.n-main__col__crumbs -->
+
+                                    <div class="n-main__col__catalog n-main__col__catalog--mod">
+
+
+                                        <div class="n-main__col__tabs tabs">
+
+                                            <ul>
+                                                <li class="n-main__col__tabs--active active" data-tab="#tab-1"><span>От физических лиц</span></li>
+                                                <li data-tab="#tab-2"><span>От юридических лиц</span></li>
+                                            </ul>
+
+                                        </div>
+                                        <!-- /.n-main__col__tabs -->
+
+                                        <div class="tabs-content">
+
+                                            <div class="n-main__col__news-block n-main__col__news-block--mod tabs-pane active" id="tab-1">
+
+                                                <div class="n-main__col__news n-main__col__news--mod">
+
+                                                    <div class="n-main__col__news__header">
+                                                        <span>03/06/15</span>
+                                                        <h4>Елизавета Алексеевна</h4>
+                                                    </div>
+
+                                                    <div class="n-main__col__news__wrap">
+
+                                                        <div class="n-main__col__news__wrap__text n-main__col__news__wrap__text--mod">
+                                                           В условиях роста стоимости энергоресурсов большое значение приобретают технологии,
+                                                           позволяющие повысить энергоэффективность и обеспечить более рациональное
+                                                           использование ресурсов.
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.n-main__col__news__wrap -->
+
+                                                </div>
+                                                <!-- /.n-main__col__news -->
+
+                                                <div class="n-main__col__news n-main__col__news--mod">
+
+                                                    <div class="n-main__col__news__header">
+                                                        <span>03/06/15</span>
+                                                        <h4>Артём</h4>
+                                                    </div>
+
+                                                    <div class="n-main__col__news__wrap">
+
+                                                        <div class="n-main__col__news__wrap__text n-main__col__news__wrap__text--mod">
+                                                           Очень хороший магазин. Большой ассортимент товара по достаточно низким ценам. Часто бывает, что даже дешевле,
+                                                            чем на рынке. Работает с раннего утра и до поздней ночи. Штукатурки у них все оригинальные, вопреки мнению многих
+                                                            людей. Хорошая парковка, места хватит всем)Оснащен банкоматами и на кассе можно расплатиться карточкой. В
+                                                            некоторых магазинах появились кафе. Можно захватить себе чайку, выбегая из магазина. В середине рабочего дня
+                                                            бывает очень полезно) Приемлемые расценки на доставку, три шкуры не дерут.
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.n-main__col__news__wrap -->
+
+                                                </div>
+                                                <!-- /.n-main__col__news -->
+
+                                                <div class="n-main__col__news n-main__col__news--mod">
+
+                                                    <div class="n-main__col__news__header">
+                                                        <span>03/06/15</span>
+                                                        <h4>Куликов Олег</h4>
+                                                    </div>
+
+                                                    <div class="n-main__col__news__wrap">
+
+                                                        <div class="n-main__col__news__wrap__text n-main__col__news__wrap__text--mod">
+                                                           Магазин понравился. Актуальная информация на сайте о товаре, обновляется в реальном времени (пока доехал домой
+                                                          - уже обновилось). Персонал адекватный. При необходимости без проблем можно подключится к электросети и нарезать
+                                                          стройматериалы как нужно, чем собственно и воспользовался.
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.n-main__col__news__wrap -->
+
+                                                </div>
+                                                <!-- /.n-main__col__news -->
+
+                                                <div class="n-main__col__news n-main__col__news--mod">
+
+                                                    <div class="n-main__col__news__header">
+                                                        <span>03/06/15</span>
+                                                        <h4>Егор Александрович</h4>
+                                                    </div>
+
+                                                    <div class="n-main__col__news__wrap">
+
+                                                        <div class="n-main__col__news__wrap__text n-main__col__news__wrap__text--mod">
+                                                           Всем здравствуйте! Мне очень понравилось отношение персонала, к клиенту! В магазине покупал насос скаженный,
+                                                            подал банковскую карточку, покупка на ней проводилась около минуты, девушка кассир пару раз извинилась за "долгое
+                                                            ожидание", хотя прекрасно понимаю что проблема была с терминалом, который связывался с банком. За это ожидание
+                                                            мне дали не большую мелочь. Вы шел из магазина с улыбкой. Во второй раз покупал печь банную, был с ребенком,
+                                                            пришел и сразу указал на нужный мне товар (выбрал его по интернет-магазину). Загрузили в машину без моего участия,
+                                                            пока ребенка на переднее место усаживал. Правда быстро ушли, мне не совсем понравилось, как положили печь на
+                                                            заднее сиденье (места для жены не оставили), я попросил подойти еще раз ко мне, чтоб освободить не много места,
+                                                            без всякого возражения, ко мне подошел грузчик (не сделал дебильное выражение лица как это обычно бывает, а
+                                                            просто подошел и помог мне). Мне очень понравилось отношение к клиентам. Спасибо большое интернет магазину, и
+                                                            вашим консультантам он-лайн.
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.n-main__col__news__wrap -->
+
+                                                </div>
+                                                <!-- /.n-main__col__news -->
+
+                                                <div class="n-main__col__news n-main__col__news--mod">
+
+                                                    <div class="n-main__col__news__header">
+                                                        <span>03/06/15</span>
+                                                        <h4>Ольга Яковлева</h4>
+                                                    </div>
+
+                                                    <div class="n-main__col__news__wrap">
+
+                                                        <div class="n-main__col__news__wrap__text n-main__col__news__wrap__text--mod">
+                                                           Работает магазин практически со всеми известными производителями. Многие жалуются на качество товаров, судя по
+                                                            отзывам, могу сказать, что это не магазин плохой, это производитель подкачал. Видела те же товары в других более
+                                                            дорогих точках, в том числе и строительных рынках - стоит все в несколько раз дороже, и есть ли смысл переплачивать.
+                                                        </br></br>
+                                                            Касаемо персонала, все загружены по полной, постоянно подходят люди, задают самые разные вопросы. Мы закупали
+                                                            товар сами, а что необходимо купить, нам писал прораб, мы этот список отдавали консультанту и он ходил и все
+                                                            подбирал, сами бы мы точно не справились, достаточно опытно консультировали, всегда вежливо.
+                                                        </br></br>
+                                                            Из минусов могу сказать, что если брать например плитку, лучше тщательно проверить ее состояние - может быть
+                                                            битая, покупатели неаккуратно кладут ее на место. Доставку тоже заказывали, когда надо было привести цемент, все
+                                                            четко по заявленному времени, претензий нет.
+
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.n-main__col__news__wrap -->
+
+                                                </div>
+                                                <!-- /.n-main__col__news -->
+
+                                                <div class="n-main__col__news n-main__col__news--mod">
+
+                                                    <div class="n-main__col__news__header">
+                                                        <span>03/06/15</span>
+                                                        <h4>Марина</h4>
+                                                    </div>
+
+                                                    <div class="n-main__col__news__wrap">
+
+                                                        <div class="n-main__col__news__wrap__text n-main__col__news__wrap__text--mod">
+                                                          Люблю этот магазин. Куча товаров, цены от минимальных до астрономических. Всегда стараемся покупать в нем
+                                                          стройматериалы и домашние товары для дачи недорогой ценовой категории, а также всякие хозяйственные мелочи.
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.n-main__col__news__wrap -->
+
+                                                </div>
+                                                <!-- /.n-main__col__news -->
+
+                                                <div class="n-main__col__pag n-main__col__pag--mod">
+
+                                                    <ul>
+                                                        <li><span>Страница 1 из 5</span></li>
+                                                        <li class="n-main__col__pag__item"><a href="#">1</a></li>
+                                                        <li class="n-main__col__pag__item"><a href="#">2</a></li>
+                                                        <li class="n-main__col__pag__item"><a href="#">3</a></li>
+                                                        <li class="n-main__col__pag__item"><a href="#">4</a></li>
+                                                        <li class="n-main__col__pag__item"><a href="#">5</a></li>
+                                                    </ul>
+
+                                                </div>
+                                                <!-- /.n-main__col__pag -->
+
+                                            </div>
+                                            <!-- /.n-main__col__news-block -->
+
+                                            <div class="n-main__col__photos tabs-pane" id="tab-2">
+
+                                                <div class="n-main__col__photos__container">
+
+                                                    <div class="n-main__col__photos__item">
+
+                                                        <div class="n-main__col__photos__item__container">
+                                                            <a href="#pop-up-letter"></a>
+                                                            <div class="n-main__col__photos__item__container__date">07/08/15</div>
+                                                            <div class="n-main__col__photos__item__container__header">ООО “Югра-Веб”</div>
+                                                            <div class="n-main__col__photos__item__container__pic">
+                                                                <img src="img/tmp/phot1.png" alt="#" />
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.n-main__col__photos__item -->
+
+                                                    <div class="n-main__col__photos__item">
+
+                                                        <div class="n-main__col__photos__item__container">
+                                                            <a href="#pop-up-letter"></a>
+                                                            <div class="n-main__col__photos__item__container__date">07/08/15</div>
+                                                            <div class="n-main__col__photos__item__container__header">ООО “Проектсвязьтелеком”</div>
+                                                            <div class="n-main__col__photos__item__container__pic">
+                                                                <img src="img/tmp/phot2.png" alt="#" />
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.n-main__col__photos__item -->
+
+                                                    <div class="n-main__col__photos__item">
+
+                                                        <div class="n-main__col__photos__item__container">
+                                                            <a href="#pop-up-letter"></a>
+                                                            <div class="n-main__col__photos__item__container__date">07/08/15</div>
+                                                            <div class="n-main__col__photos__item__container__header">ООО “ТОР”</div>
+                                                            <div class="n-main__col__photos__item__container__pic">
+                                                                <img src="img/tmp/phot3.png" alt="#" />
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.n-main__col__photos__item -->
+
+                                                    <div class="n-main__col__photos__item">
+
+                                                        <div class="n-main__col__photos__item__container">
+                                                            <a href="#pop-up-letter"></a>
+                                                            <div class="n-main__col__photos__item__container__date">07/08/15</div>
+                                                            <div class="n-main__col__photos__item__container__header">Максим Витальевич</div>
+                                                            <div class="n-main__col__photos__item__container__pic">
+                                                                <img src="img/tmp/phot3.png" alt="#" />
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.n-main__col__photos__item -->
+
+                                                    <div class="n-main__col__photos__item">
+
+                                                        <div class="n-main__col__photos__item__container">
+                                                            <a href="#pop-up-letter"></a>
+                                                            <div class="n-main__col__photos__item__container__date">07/08/15</div>
+                                                            <div class="n-main__col__photos__item__container__header">ООО “СапсанВнешТорг”</div>
+                                                            <div class="n-main__col__photos__item__container__pic">
+                                                                <img src="img/tmp/phot3.png" alt="#" />
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.n-main__col__photos__item -->
+
+                                                    <div class="n-main__col__photos__item">
+
+                                                        <div class="n-main__col__photos__item__container">
+                                                            <a href="#pop-up-letter"></a>
+                                                            <div class="n-main__col__photos__item__container__date">07/08/15</div>
+                                                            <div class="n-main__col__photos__item__container__header">ООО “РусГидро”</div>
+                                                            <div class="n-main__col__photos__item__container__pic">
+                                                                <img src="img/tmp/phot3.png" alt="#" />
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.n-main__col__photos__item -->
+
+                                                </div>
+                                                <!-- /.n-main__col__photos__container -->
+
+                                            </div>
+                                            <!-- /.n-main__col__photos -->
+
+                                        </div>
+                                        <!-- /.tabs-content -->
+
+                                    </div>
+                                    <!-- /.n-main__col__catalog -->
+
+                                </div>
+                                <!-- /.n-main__col__container -->
+
+                            </div>
+                            <!-- /.n-main__col -->
+
+                        </div>
+                        <!-- /.n-main__container -->
+
+                    </div>
+                    <!-- /.n-main__home -->
+
+                </div>
+                <!-- /.n-container -->
+
+             </main>
+
+             <footer class="n-footer">
+
+                <div class="n-container">
+
+                    <div class="n-footer__nav">
+
+                        <ul class="n-footer__nav__menu">
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Фотогалерея</a></li>
+                            <li><a href="#">Производство</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+
+                    </div>
+                    <!-- /.n-footer__nav -->
+
+                    <div class="n-footer__container">
+
+                        <div class="n-footer__contacts">
+
+                            <h3>Контакты</h3>
+                            <span>Архангельск, Окружное шоссе, 6</span>
+                            <span>
+                               (8182) 62-58-52</br>
+                               24-34-22, 24-34-33,</br>
+                               44-03-71, 44-03-72</br>
+                            </span>
+
+                        </div>
+                        <!-- /.n-footer__contacts -->
+
+                        <div class="n-footer__map">
+
+                            <div class="n-footer__map__point">
+
+                                <div class="n-footer__map__point__circle"></div>
+
+                                <div class="n-footer__map__point__name">
+                                    <span>РОССИЯ, АРХАНГЕЛЬСК</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- /.n-footer__map -->
+
+                        <div class="n-footer__write" href="#popup-letter">
+
+                            <a href="#popup-letter"></a>
+                            <h3>Написать нам</h3>
+                            <img src="img/conv.png" alt="" />
+                            <span>sevstroytorg@gmail.ru</span>
+
+                        </div>
+                        <!-- /.n-footer__write -->
+
+                    </div>
+                    <!-- /.n-footer__container -->
+
+                </div>
+                <!-- /.n-container -->
+
+                <div class="n-footer__bottom">
+
+                    <div class="n-container">
+
+                        <div class="n-footer__bottom__container">
+
+                            <div class="n-footer__bottom__upside">
+                                <span>к началу страницы<div class="n-footer__bottom__upside__circ"></div></span>
+                            </div>
+
+                            <div class="n-footer__bottom__copyright">Copyright © 2013 - ООО «Севстройторг» | Все права защищены.</div>
+
+                            <a class="n-footer__bottom__leeft" href="#">
+                                <span>разработка сайтов</span><b>Leeft</b>
+                            </a>
+
+                        </div>
+                        <!-- /.n-footer__bottom__container -->
+
+                    </div>
+                    <!-- /.n-container -->
+
+                </div>
+                <!-- /.n-footer__bottom -->
+
+             </footer>
+
+             <div class="pop-up-phone zoom-anim-dialog mfp-hide" id="popup-phone">
+
+                 <div class="pop-up-phone__header">
+                     <h3>Заказать звонок</h3>
+                     <div class="pop-up-phone__header__close"></div>
+                 </div>
+
+                 <div class="pop-up-phone__wrap">
+
+                     <div class="pop-up-phone__wrap__text">
+                         В случае если Вы не можете до нас
+                         дозвониться, закажите обратный звонок
+                         на Ваш номер через форму.
+                     </div>
+
+                     <form class="rf">
+                         <fieldset class="pop-up-phone__wrap__f1">
+                             <label class="pop-up-phone__wrap__lab1">Телефон</label>
+                             <input type="text" placeholder="" class="phone-mask rfield">
+                         </fieldset>
+
+                         <fieldset class="pop-up-phone__wrap__f2">
+                             <label class="pop-up-phone__wrap__lab1">Ваше сообщение:</label>
+                             <textarea placeholder="Оставьте ваше сообщение" class="rfield"></textarea>
+                         </fieldset>
+
+                        <div class="pop-up-phone__wrap__code">
+
+                             <fieldset class="pop-up-phone__wrap__code__f3">
+                                 <div class="pop-up-phone__wrap__code__f3__cont">
+                                     <label class="pop-up-phone__wrap__lab2">Код безопасности:</label>
+                                     <input type="text">
+                                 </div>
+                             </fieldset>
+                             <fieldset class="pop-up-phone__wrap__code__f4">
+                                 <div class="pop-up-phone__wrap__code__f3__cont">
+                                     <label class="pop-up-phone__wrap__lab2">Введите код:</label>
+                                     <input type="text" class="rfield">
+                                 </div>
+                             </fieldset>
+
+                         </div>
+                        <!-- /.pop-up-phone__wrap__code -->
+
+                        <fieldset class="pop-up-phone__wrap__f5">
+                            <input type="submit" value="Отправить" class="disabled">
+                        </fieldset>
+
+                     </form>
+
+                 </div>
+                 <!-- /.pop-up-phone__body -->
+
+
+             </div>
+             <!-- /.pop-up-phone -->
+
+             <div class="pop-up-phone--letter zoom-anim-dialog mfp-hide" id="popup-letter">
+
+                 <div class="pop-up-phone__header">
+                     <h3>Написать письмо</h3>
+                     <div class="pop-up-phone__header__close"></div>
+                 </div>
+
+                 <div class="pop-up-phone__wrap--letter">
+
+                     <form id="messageForm" class="rf">
+
+                        <div class="pop-up-phone__wrap__left">
+
+                            <div class="pop-up-phone__wrap__left__container">
+
+                                <fieldset>
+                                    <label>Ваше Ф.И.О</label>
+                                    <input type="name" required class="rfield">
+                                </fieldset>
+                                <fieldset>
+                                    <label>E-mail</label>
+                                    <input type="email" required class="rfield">
+                                </fieldset>
+                                <fieldset>
+                                    <label>Телефон</label>
+                                    <input type="name" class="phone-mask rfield" required>
+                                </fieldset>
+
+                                <div class="pop-up-phone__wrap__left__note"><b>*</b> - поля обязательные для заполнения</div>
+
+                            </div>
+                            <!-- /.pop-up-phone__wrap__container -->
+
+                        </div>
+                        <!-- /.pop-up-phone__wrap__left -->
+
+                        <div class="pop-up-phone__wrap__right">
+
+                            <div class="pop-up-phone__wrap__right__container">
+
+                                <fieldset>
+                                    <label>Сообщение</label>
+                                    <textarea name="comment" required class="rfield"></textarea>
+                                </fieldset>
+
+                                <fieldset class="pop-up-phone__wrap__f5 pop-up-phone__wrap__f5--mod">
+                                    <input type="submit" value="Отправить" class="disabled">
+                                </fieldset>
+
+                            </div>
+                            <!-- /.pop-up-phone__wrap__container -->
+
+                        </div>
+                        <!-- /.pop-up-phone__wrap__left -->
+
+                     </form>
+
+                 </div>
+                 <!-- /.pop-up-phone__body -->
+
+
+             </div>
+             <!-- /.pop-up-phone -->
+
+             <div class="pop-up-letter zoom-anim-dialog mfp-hide" id="pop-up-letter">
+                 <div class="pop-up-letter__close">
+
+                 </div>
+                 <div class="pop-up-letter__wrap">
+                    <img src="img/tmp/letter.png" alt="" />
+                 </div>
+             </div>
+             <!-- /.pop-up-letter -->
+
+             <div class="pop-up-thanks zoom-anim-dialog mfp-hide" id="pop-up-thanks">
+                 <div class="pop-up-thanks__header">
+                     <span>Спасибо за ваш отзыв</span>
+                     <div class="pop-up-phone__header__close"></div>
+                 </div>
+                 <div class="pop-up-thanks__wrap">
+                     <span>Ваше сообщение успешно отправлено.</span>
+                 </div>
+
+             </div>
+             <!-- /.pop-up-letter__thanks -->
+
+    	</div>
+    	<!-- /#page -->
+
+	</body>
+
+
+</html>

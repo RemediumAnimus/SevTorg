@@ -10,6 +10,13 @@ window.onload = function(){
         return $('#max-indicator').is(':visible');
     }
 
+    $('.n-footer__bottom__upside').click(function(){
+        var body=$("html, body");
+        body.animate({scrollTop:0},300,'swing');
+    });
+
+    tabby.init();
+
     if ($('#page input').hasClass("phone-mask")) {
       $("#page .phone-mask").mask("+7 (999) 999-9999");
     };
@@ -21,6 +28,7 @@ window.onload = function(){
     }
 
     stickyFooter();
+
     $(window).on('resize',stickyFooter);
 
     $('input, textarea').placeholder();
@@ -87,13 +95,17 @@ window.onload = function(){
 
             closeBtnInside: true,
             preloader: false,
-
+            closeMarkup: '',
             midClick: true,
             removalDelay: 300,
             mainClass: 'my-mfp-slide-bottom'
 
         });
         $(document).on('click', '.pop-up-phone__header__close', function (e) {
+            e.preventDefault();
+            $.magnificPopup.close();
+        });
+        $(document).on('click', '.pop-up-letter__close', function (e) {
             e.preventDefault();
             $.magnificPopup.close();
         });
@@ -110,7 +122,7 @@ window.onload = function(){
 
             closeBtnInside: true,
             preloader: false,
-
+            closeMarkup: '',
             midClick: true,
             removalDelay: 300,
             mainClass: 'my-mfp-slide-bottom',
@@ -137,12 +149,79 @@ window.onload = function(){
             midClick: true,
             removalDelay: 300,
             mainClass: 'my-mfp-slide-bottom',
+            closeMarkup: '',
             callbacks: {
                 open: function() {
                     popup = $.magnificPopup.instance;
                 }
             }
         });
+    });
+
+    $(function () {
+        $('.n-main__col__photos__item__container').find('a').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+            closeMarkup: '',
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-slide-bottom',
+            callbacks: {
+                open: function() {
+                    popup = $.magnificPopup.instance;
+                }
+            }
+        });
+    });
+
+    $(function () {
+        $('.n-main__sidebar__form__last').find('input').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+            closeMarkup: '',
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-slide-bottom',
+            callbacks: {
+                open: function() {
+                    popup = $.magnificPopup.instance;
+                }
+            }
+        });
+    });
+
+    $('.n-main__col__album__pop-up').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-with-zoom mfp-img-mobile',
+        zoom: {
+            enabled: true,
+            duration: 300,
+            opener: function(element) {
+                return element.find('img');
+            }
+        },
+        gallery: {
+            enabled: true,
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+        }
     });
 
     $('.n-header__icons__menu').click(function(){
