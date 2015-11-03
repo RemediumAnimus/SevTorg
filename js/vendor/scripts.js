@@ -321,6 +321,12 @@ window.onload = function(){
     createSliderM();
     checkSlider();
 
+    if (isMiddleWidth()) {
+        $('.n-main__col__form').find('.n-main__col__form__inside').css({'top':'0px','height':'480px'});
+        $('.n-main__col__form').find('.n-main__col__form__abs').css({'top':'22px','z-index':5});
+        $('.n-main__col__form').css('margin-top','52px');
+    }
+
     $(window).resize(function(){
         checkSlider();
         showMenu();
@@ -328,7 +334,7 @@ window.onload = function(){
 
         if (isMiddleWidth()) {
             $('.n-main__col__form').find('.n-main__col__form__inside').css({'top':'0px','height':'480px'});
-            $('.n-main__col__form').find('.n-main__col__form__abs').css({'top':'22px'});
+            $('.n-main__col__form').find('.n-main__col__form__abs').css({'top':'22px','z-index':5});
             $('.n-main__col__form').css('margin-top','52px');
         }
 
