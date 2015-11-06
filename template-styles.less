@@ -1432,6 +1432,10 @@ body {
             display: block;
             width: 100%;
             height: 100%;
+
+            @media all and (min-width:560px) {
+              height: 205px;
+            }
           }
         }
 
@@ -1594,9 +1598,10 @@ body {
 
         &__pic {
           position: relative;
+          height: 100%;
 
           @media all and (min-width: 560px) {
-            height: auto;
+            height: 186px;
           }
 
           &:before {
@@ -1614,6 +1619,7 @@ body {
             height: 100%;
             @media all and (min-width: 560px) {
              height: auto;
+             height: 100%;
             }
           }
         }
