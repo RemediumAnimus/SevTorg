@@ -1381,6 +1381,7 @@ body {
   bottom: 0;
   margin: auto;
   height: 55px;
+  text-align: center;
 }
 .n-main__col__album__item__container__button {
   width: 170px;
