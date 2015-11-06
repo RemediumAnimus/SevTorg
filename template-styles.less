@@ -1209,6 +1209,7 @@ body {
     &__album {
       margin: 0px 0px;
       margin-top: 14px;
+      text-align: left;
 
       &--mod {
         margin-top: 0;
@@ -1225,16 +1226,18 @@ body {
 
       &__item {
         width: 100%;
-        float: left;
+        //float: left;
         margin-bottom: 10px;
+        display: inline-block;
+        vertical-align: top;
 
         @media all and (min-width: 560px) {
-          width: 50%;
+          width: 49%;
           margin-bottom: 28px;
         }
 
         @media all and (min-width:@mq-medium) {
-          width: 33.3333%;
+          width: 32.3333%;
         }
 
         &__container {
@@ -1341,6 +1344,7 @@ body {
             min-height: 28px;
             display: table;
             padding: 7px 0px 9px 0px;
+            text-align: center;
 
             &--mod {
               font-size: 15px;
@@ -1524,12 +1528,14 @@ body {
     &__actions {
       text-align: left;
       width: 100%;
-      float: left;
+      //float: left;
       position: relative;
       margin-bottom: 12px;
+      display: inline-block;
+      vertical-align: top;
 
       @media all and (min-width: 560px) {
-        width: 50%;
+        width: 49%;
       }
 
       @media all and (min-width: @mq-small) {
@@ -1537,7 +1543,7 @@ body {
       }
 
       @media all and (min-width: @max-width) {
-        width: 33.3333%;
+        width: 32.3333%;
       }
 
       &:hover {
